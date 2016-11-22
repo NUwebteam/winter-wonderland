@@ -1,0 +1,1158 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	font-size: 62.5%; 
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+}
+body {
+	background-color:#E5E5E4;
+	font-size: 19px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote {
+	quotes: "\201C""\201D""\2018""\2019";
+	margin: 2.2em 0;
+	font-family: georgia,'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body.archive article.hentry blockquote p,
+blockquote p {
+	margin: 0 0 0 2em;
+	font-size:1.5em;
+	line-height:155%;
+	font-family:georgia, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:500;
+	color:#CCC;
+	clear:none;
+}
+blockquote:before,
+blockquote:after {
+	font-size: 6.0em;
+	display: inline-block;
+}
+blockquote:before {
+  color: #CCC;
+	content: "&ldquo;";
+	content: "\201C";
+	float: left;
+	margin: 0.2em 0 0 0.1em;
+}
+cite {
+    color: #ccc;
+    font-family: georgia;
+    font-size: .75em !important;
+    font-style: italic !important; 
+    font-weight: normal;
+}
+a.quote-format-link {
+	float: right;
+	font-size: 0.7em;
+	color: #8e8e8e !important;
+}
+
+a:focus {
+	outline:none /*thin dotted*/;
+}
+a:hover, a:active { 
+	outline: 0;
+}
+a img {
+	border: 0;
+	outline: 0;
+	padding:0;
+	margin:0;
+	max-width:100%;
+	height:auto;
+	box-sizing: content-box;
+}
+.imglink {
+	float:left;
+	display:inline-block;
+}
+.imglink img {
+	box-sizing: content-box;
+	width:100%;
+	float:left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight:normal;
+	line-height:100%;
+}
+h1 {
+	font-size: 3.0em;
+	color:#000;
+}
+h1.entry-title,
+h1.page-title {
+	margin:0 0 0.5em 0;
+}
+body.classification_3qs h1.entry-title {
+	color:#FFF;
+}
+h2 {
+	font-size: 1.7em;
+	margin-bottom: 0.5em;
+}
+h3 {
+	font-size: 1.4em;
+	line-height:100%;
+	margin-bottom: 0.6em;
+}
+body.classification_3qs .site-content h3 {
+	color:#008C76;
+}
+h4 {
+	font-size: 1.2em;
+	margin-bottom: 0.6em;
+}
+h4.fe_title {
+	margin-bottom:45px;
+}
+h5 {
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+h6, h6 a:link, h6 a:visited, .head6, .head6 a:link, .head6 a:visited, a.head6:link, a.head6:visited {
+	font-size: 12px;
+	margin-bottom: 0.6em;
+	font-family: 'HelveticaNeueCondensed', 'HelveticaNeue-Condensed', 'Helvetica Neue Condensed', 'Arial Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#999;
+	margin-bottom:10px;
+	text-transform: uppercase;
+}
+h6 a:hover, h6 a:active, .head6 a:hover, .head6 a:active {
+	color:#666;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+p {
+	margin-bottom: 1.1em;
+	font-family: Georgia, Baskerville, Garamond, "Palatino Linotype", "Times New Roman", serif;
+	font-size: 1.0em;
+	line-height: 145%;
+}
+ul, ol {
+	margin: 0 0 1.5em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+li {
+	margin-bottom: 1.0em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.5em 1.5em 0;
+}
+b, strong {
+	font-weight: bold;
+}
+/*dfn, cite,*/ 
+em, i {
+	font-style: italic;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	overflow: auto;
+	max-width: 100%;
+}
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup, sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+figure {
+	margin: 0;
+}
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+th {
+	font-weight: bold;
+}
+button, input, select, textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+ *vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+button, input {
+	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+ *overflow: visible;  /* Corrects inner spacing displayed oddly in IE6/7 */
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	border: 1px solid #ccc;
+	border-color: #ccc #ccc #bbb #ccc;
+	border-radius: 3px;
+	background: #fafafa; /* Old browsers */
+	background: -moz-linear-gradient(top, #fafafa 60%, #e6e6e6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #fafafa), color-stop(100%, #e6e6e6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fafafa 60%, #e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fafafa 60%, #e6e6e6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fafafa 60%, #e6e6e6 100%); /* IE10+ */
+	background: linear-gradient(top, #fafafa 60%, #e6e6e6 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e6e6e6', GradientType=0 ); /* IE6-9 */
+	box-shadow: inset 0 2px 1px #fff;
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	font-size: 12px;
+	font-size: 1.4rem;
+	padding: 1.12em 1.5em .88em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+	background: #f5f5f5; /* Old browsers */
+	background: -moz-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f5f5f5), color-stop(100%, #dcdcdc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%); /* IE10+ */
+	background: linear-gradient(top, #f5f5f5 60%, #dcdcdc 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#dcdcdc', GradientType=0 ); /* IE6-9 */
+	border-color: #bbb #bbb #aaa #bbb;
+}
+button:focus, html input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb #bbb;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .15);
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, .15);
+}
+input[type="checkbox"], input[type="radio"] {
+	box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+ -webkit-appearance: none;
+}
+button::-moz-focus-inner, input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+ border: 0;
+ padding: 0;
+}
+input[type=text], textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+input[type=text]:focus, textarea:focus {
+	color: #111;
+}
+input[type=text] {
+	padding: 3px;
+}
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	padding-left: 3px;
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+/* Links */
+
+a:link {
+	color:#C00;
+	text-decoration:none;
+}
+a:visited {
+	color:#900;
+	text-decoration:none;
+}
+a:hover, a:active, a:focus {
+	color:#6A0000;
+	text-decoration:none;
+}
+.entry-title a {
+	color: #000;
+}
+.spf-header .entry-title a, .spf-header .entry-title a:hover {
+  color: #FFF;
+}
+.entry-title a:hover {
+	color:#6A0000;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+
+#searchsubmit {
+	display: none;
+}
+
+
+
+
+/* The Grid */
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16 {
+	float: left;
+	min-height: 1px;
+	margin:0 15px 0 0;/*overflow:hidden;*/
+}
+.col1 {
+	width: 60px;
+}
+.col2 {
+	width: 135px;
+}
+.col3 {
+	width: 210px;
+}
+.col4 {
+	width: 285px;
+}
+.col5 {
+	width: 360px;
+}
+.col6 {
+	width: 435px;
+}
+.col7 {
+	width: 510px;
+}
+.col8 {
+	width: 585px;
+}
+.col9 {
+	width: 660px;
+}
+.col10 {
+	width: 735px;
+}
+.col11 {
+	width: 810px;
+}
+.col12 {
+	width: 885px;
+}
+.col13 {
+	width: 960px;
+}
+.col14 {
+	width: 1035px;
+}
+.col15 {
+	width: 1110px;
+}
+.col16,
+.fe_browse_stick,
+.fe_browse_stick_top {
+	width: 1185px;
+	margin-right: 0px !important;
+}
+.last {
+	margin-right: 0px !important;
+}
+.right {
+	float:right !important;
+}
+.hrow {
+	float:left;
+	width:100%;
+}
+.hcenter {
+	width:1185px;
+	margin:0 auto;
+}
+.toprule {
+	border-top:1px solid #999;
+	padding-top:8px;
+}
+.bigtoprule {
+	border-top:2px solid #bbbbbb;
+	padding-top:8px;
+}
+.topsection {
+	margin-bottom:10px;
+}
+#page,
+.spf-nav {
+	width:1305px;
+}
+#page {
+	margin:0 auto;
+}
+.pageback {
+	background-color:#FFF;
+	width:100%;
+	float:left;
+	box-shadow: 0 0 20px #CCC;
+	overflow:hidden;
+	border-top: 5px solid #C2162D;
+}
+.logoplace {
+	float:left;
+	margin-top:40px;
+	width: 100%;
+}
+
+a.logo {
+	width:313px;
+	height: 31px;
+	display:block;
+	margin:0 0 25px -4px;
+	border:none;
+	background-image: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/logo.png);
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	float:left;
+}
+a.logo:hover {
+	opacity:0.7;
+}
+.logoplace p.special {
+	float:left;
+	font-size: 1.6em;
+	color: #666;
+	padding-left: 30px;
+	line-height: 100%;
+	
+}
+h2.site-title {
+	font-size:38px;
+}
+.site-title a {
+	text-decoration:none;
+}
+#main {
+	width: 100%;
+	float: left;
+}
+#primary, #secondary {
+	margin:0 0 30px;
+}
+.pf-content {
+	width: 85%;
+}
+body.single .main-top {
+	margin:20px 0 0;
+}
+.single-top-row {
+	margin:10px 0 30px;
+	float:left;
+}
+
+#nav-below {
+	float:left;
+	width:100%;
+}
+#about-site {
+	background-color: #f4f4f4;
+	padding:30px 0 50px;
+}
+#footer-related {
+	margin:25px 0 45px;
+}
+#footer-related .hcenter {
+	padding:20px 0 0;
+}
+
+body.search .site-header, 
+body.search-results .site-header {
+	margin-bottom:40px;
+}
+.widget_recent_entries ul {
+	list-style-type:none;
+}
+.widget_recent_entries li {
+	float:left;
+	border-top:1px solid #CCC;
+	margin-bottom:8px;
+	width:100%;
+	font-size:16px;
+}
+article.no-results {
+	float:left;
+	margin-bottom:100px;
+}
+.searchbox-large {
+	margin:20px 0 50px;
+	float:left;
+	background-color:#DADADA;
+	width:92%;
+	padding:4%;
+	border-radius:6px;
+}
+.searchbox-small {
+	margin:10px 0 10px;
+	float:left;
+	background-color:#F1F1F1;
+	width:92%;
+	padding:4%;
+	border-radius:6px;
+}
+.searchbox-large input#s {
+	width:90%;
+	padding:10px 10px 10px 40px;
+	background-image: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/search.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	margin-bottom:20px;
+}
+
+
+.above-title {
+	float:left;
+	width:100%;
+}
+.above-title-second {
+	float:right;
+	margin:0;
+	padding:0;
+}
+
+#footer a:link, #footer a:visited {
+	color:#9F9F9F;
+	margin-right:10px;
+}
+#footer a:hover, #footer a:active {
+	color:#FFF;
+}
+#footer p {
+	font-size: 14px;
+	line-height: 125%;
+	color: #555;
+}
+#footer h2 {
+	font-size: 28px;
+	line-height: 120%;
+	color: #666;
+}
+#footer h3 {
+	font-size: 21px;
+	line-height: 120%;
+	color: #666;
+}
+#footercenter {
+	width:940px;
+	height: auto;
+	margin:10px auto 100px;
+	background-image: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/footer-logo.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.nuglobal a.logo {
+	background: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/footer/NUlogo-footer.png) no-repeat scroll left top transparent;
+	display: inline;
+	float: left;
+	height: 17px;
+	width: 173px;
+	text-decoration: none;
+	font-color: none;
+	padding: 0;
+	opacity:0.6;
+}
+.nuglobal a.logo:hover {
+	opacity:1.0;
+}
+.nuglobal a.social {
+	height:16px;
+	width:16px;
+	display:block;
+	float:right;
+	margin-left:6px;
+	opacity:0.7;
+}
+.nuglobal a.social:hover {
+	opacity:1.0;
+}
+.nuglobal a.facebook {
+	background: url("../Valkyrie Robot / news @ Northeastern_files/images/footer/footer-fb-icon.png");
+}
+.nuglobal a.twitter {
+	background: url("../Valkyrie Robot / news @ Northeastern_files/images/footer/footer-twitter-icon.png");
+}
+.nuglobal a.youtube {
+	background: url("../Valkyrie Robot / news @ Northeastern_files/images/footer/footer-youtube-icon.png");
+}
+.nuglobal p {
+	font-size: 13px !important;
+	line-height: 125%;
+	color: #AEAEAE !important;
+	margin-bottom:10px !important;
+}
+.nuglobal a:link, .nuglobal a:visited {
+	color: #AAA !important;
+}
+.nuglobal a:hover, .nuglobal a:active {
+	color: #707070 !important;
+}
+.about-news p, p.about-news {
+	font-size:12px;
+	line-height:130%;
+	padding-right:10px;
+	color:#7F7F7F;
+}
+.media-icons-footer {
+	display:block;
+	float:left;
+	clear:none;
+	width:100px;
+	height:26px;
+}
+.media-icon {
+	display:block;
+	float:left;
+	clear:none;
+	width:26px;
+	height:26px;
+	margin:0 7px 0 0;
+	background-image:url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/media-icons.png);
+}
+#icon-youtube {
+	background-position:0px 30px;
+}
+#icon-youtube:hover {
+	background-position:0px 0px;
+}
+#icon-twitter {
+	background-position:60px 30px;
+}
+#icon-twitter:hover {
+	background-position:60px 0px;
+}
+#icon-facebook {
+	background-position:30px 30px;
+}
+#icon-facebook:hover {
+	background-position:30px 0px;
+}
+p.about-news {
+	font-size:12px;
+	color:#848484;
+	padding-right:30px;
+}
+#about-site .submit {
+	padding:0 10px 0 10px;
+}
+#about-site .last input.submit {
+	margin:0 0 0 0;
+	padding: 0 10px;
+}
+.insolutionlink {
+	width:205px;
+	height:69px;
+	background-color:#CCC;
+	float:left;
+	display:block;
+	background-image: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/insolution.gif);
+	background-repeat: no-repeat;
+}
+.gonulink {
+	width:205px;
+	height:69px;
+	margin:10px 0 0 0;
+	background-color:#fff;
+	float:left;
+	display:block;
+	background-image: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/gonu.png);
+	background-repeat: no-repeat;
+}
+.defaultpage {
+	margin:40px 0 50px;
+}
+.clearfloat, .clear {
+	clear:both;
+	width:100%;
+}
+.contactlist {
+	margin-bottom:20px;
+}
+.contactlist h4 {
+	font-weight:600;
+}
+.clearall {
+	width:100%;
+	clear:both;
+}
+
+footer {
+	float:left;
+	margin:20px 0 100px;
+	width:100%;
+}
+
+
+
+/*    Original Size (Smaller screens)    */
+
+@media only screen and (max-width : 1300px) {
+
+	body {
+		font-size: 16px;
+	}
+	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16 {
+		margin-right:10px;
+	}
+	.col1 {
+		width: 50px;
+	}
+	.col2 {
+		width: 110px;
+	}
+	.col3 {
+		width: 170px;
+	}
+	.col4 {
+		width: 230px;
+	}
+	.col5 {
+		width: 290px;
+	}
+	.col6 {
+		width: 350px;
+	}
+	.col7 {
+		width: 410px;
+	}
+	.col8 {
+		width: 470px;
+	}
+	.col9 {
+		width: 530px;
+	}
+	.col10 {
+		width: 590px;
+	}
+	.col11 {
+		width: 650px;
+	}
+	.col12 {
+		width: 710px;
+	}
+	.col13 {
+		width: 770px;
+	}
+	.col14 {
+		width: 830px;
+	}
+	.col15 {
+		width: 890px;
+	}
+ 
+	.hcenter {
+		width:950px;
+		margin:0 60px;
+	}
+	#page,
+	.spf-nav {
+		width:1070px;
+	}
+	
+}
+/*  End the Original Laptop Size  */
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (max-width : 1070px) {
+	
+	body {
+		font-size: 15px;
+	}
+	#page, 
+	.pageback,
+	.spf-nav {
+	 	width: 930px;
+	}
+	.hcenter {
+	 	width:870px;
+	 	margin:0 30px;
+	}
+	.col1 {
+	 width: 45px;
+	}
+	.col2 {
+	 width: 100px;
+	}
+	.col3 {
+	 width: 155px;
+	}
+	.col4 {
+	 width: 210px;
+	}
+	.col5 {
+	 width: 265px;
+	}
+	.col6 {
+	 width: 320px;
+	}
+	.col7 {
+	 width: 375px;
+	}
+	.col8 {
+	 width: 430px;
+	}
+	.col9 {
+	 width: 485px;
+	}
+	.col10 {
+	 width: 540px;
+	}
+	.col11 {
+	 width: 595px;
+	}
+	.col12 {
+	 width: 650px;
+	}
+	.col13 {
+	 width: 705px;
+	}
+	.col14 {
+	 width: 760px;
+	}
+	.col15 {
+	 width: 815px;
+	}
+
+}
+/************* End the small screens  ****************/
+
+/* -----------  Phones  ----------- */
+
+/*@media only screen and (max-width : 767px) {*/
+@media only screen and (max-width : 920px) {
+	
+	.mobile-on {
+		display: block !important;
+	}
+	#page, .pageback, .spfnav {
+	 	width: 100%;
+	}
+	.hcenter {
+	 	width: 90%;
+	 	margin: 0 5%;
+	}
+	
+.flex-caption {
+	font-size: 11px;
+	line-height: 12px;
+}
+
+	/*body.single-post .main-top {
+		margin-top: 30px;
+	}*/
+	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, 
+	.col16,
+	.fe_browse_stick,
+	.fe_browse_stick_top {
+	 	margin:0;
+	 	width: 100%;
+	}
+	.site-navigation {
+		/* This is the sections nav */
+		display: none;
+	}
+	.menu-toggle {
+		display: block;
+		position: fixed;
+		top:0px;
+		right:0px;
+		width: 40px;
+		height: 40px;
+		background-color: #757575;
+		background-image: url(http://www.northeastern.edu/news/wp-content/themes/nu-news-002/images/menu.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		font-size: 0;
+		line-height: 0;
+		cursor: pointer;
+		z-index: 999;
+	}
+	.topheader-secondary {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 200px;
+		height: 100%;
+		background-color: #ececec;
+		box-shadow: 0 0 30px rgba(0,0,0,0.6);
+		z-index: 998;
+		overflow: scroll;
+	}
+	.topheader-secondary.toggled-on {
+		display: block;
+	}
+	.topheader-secondary ul,
+	.topheader-secondary li {
+		width: 100%;
+	}
+	.topheader-secondary a {
+		width: 80%;
+		padding:1.0em 10%;
+		font-size: 1.1em;
+	}
+	.topheader-secondary li.current_page_item a {
+		color:#222222;
+	}
+	.topheader-secondary ul#menu-top-right-nav {
+		float: left;
+		padding-bottom: 50px;
+	}
+	.topheader-secondary ul ul {
+		float: left;
+		position: relative;
+		background-color: #f8f8f8;
+		width: 100%;
+		padding:10px 0;
+		display: none;
+		box-shadow: none;
+	}
+	.topheader-secondary ul li.menu-item-has-children:hover {
+		background-color: inherit;
+		box-shadow: none;
+	}
+	.topheader-secondary ul li:hover ul {
+		display: none;
+	}
+	.topheader-secondary ul ul li a {
+		width: 80%;
+		padding:6px 10%;
+		line-height: 110%;
+	}
+	.logoplace {
+		margin-top: 20px;
+	}
+	.home-spotlight {
+		margin: 0 0 20px;
+	}
+	.home-top-spotlight {
+		margin: 0 ;
+	}
+	.home-spotlight .hcenter {
+		width: 100%;
+		margin: 0;
+	}
+	.home-top-spotlight-image,
+	.media-spotlight-image  {
+		width:100%;
+		height:220px;
+		float:left;
+	}
+	.home-top-btext,
+	.media-spotlight-btext {
+		width:100%;
+		height:auto;
+	}
+	.media-icons-header {
+	 	display:none;
+	 	visibility:hidden;
+	}
+	.home-second-features .capentry {
+	 	width:100%;
+	 	border-top:1px solid #afafaf;
+	 	border-bottom:1px solid #ddd;
+	}
+	.home-second-features .capentry-thumb {
+	 	width:32%;
+	 	float:left;
+	}
+	.home-second-features .featured-headers-contain {
+	 	width: 65%;
+	 	float:right;
+	}
+	.home-second-features .capentry-excerpt p {
+	 	display:none;
+	}
+	.media-icons-footer {
+	 	display:block;
+	 	float:left;
+	 	clear:none;
+	 	width:100px;
+	 	height:26px;
+	 	margin:0px 0 0px 0;
+	}
+	.nuglobal .last {
+	 	display:none;
+	 	visibility:hidden;
+	}
+	.nuglobal .col5 {
+	 	width:290px;
+	}
+	#footer-related h3 {
+	 margin:0 0 20px 0;
+	}
+	#about-site .col5 h4, #about-site .col6 h4 {
+	 width:290px;
+	 font-size:16px;
+	}
+	#about-site .submit {
+	 padding:0 10px 0 10px;
+	}
+	#about-site .last input.submit {
+	 margin:0px 0 0 0;
+	 padding: 0 10px;
+	}
+	#about-site .col4 input.email-address {
+	 width:130px;
+	 margin:0px 0 5px 0;
+	}
+	#about-site table {
+	 margin:0 0 0 0;
+	}
+	p.about-news {
+	 padding:0;
+	 margin:0;
+	}
+	#about-site .col8, #about-site .col4, #about-site .col6, #about-site .col5 {
+	 width:290px;
+	 margin:0 0 15px;
+	}
+	#about-site .hcenter {
+	 padding:10px 0 20px 0;
+	}
+	body.single .featured-image, body.single .featured-image img {
+	 	width:100% !important;
+	}
+	footer.entry-meta {
+	 margin:0 0 30px;
+	}
+	
+	header .nav-search {
+	 	display:none;
+	}
+
+	.spf-nav.fixedTop {
+		position:relative !important;
+		top:inherit;
+		left:inherit;
+	}
+
+	.logoplace {
+		float: none;
+	}
+	a.logo {
+		width:17em;
+		max-width:80%;
+		margin-top: 2em;
+	}
+.logoplace p.special {
+    color: #666;
+    float: left;
+    font-size: 1.4em;
+  margin-top: 1.5em;
+    padding-left: 20px;
+}
+
+}
+
+/* -----------  For Faces posts, make columns full width below 767px  ----------- */
+
+@media only screen and (max-width : 767px) {
+
+
+  
+}
+
+
+
+/* -----------  Even Smaller Phones  ----------- */
+
+@media only screen and (max-width : 560px) {
+
+.logoplace p.special {
+    color: #666;
+    float: left;
+    font-size: 1.3em;
+  margin-top: -20px;
+    padding-left: 0px;
+}
+a.logo {
+	margin-top: 5px;
+}
+}

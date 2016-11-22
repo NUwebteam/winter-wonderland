@@ -1,0 +1,281 @@
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+	line-height: 1;
+	min-height:100%;
+	font-family:Artial, Verdana, sans-serif;
+}
+
+body {
+	background: #eeeeee;
+	background: -webkit-linear-gradient(top, #eeeeee, #cccccc 100%);
+	background: -moz-linear-gradient(top, #eeeeee, #cccccc 100%);
+	background: -o-linear-gradient(top, #eeeeee, #cccccc 100%);
+	background: -ms-linear-gradient(top, #eeeeee, #cccccc 100%);
+	background: linear-gradient(top, #eeeeee, #cccccc 100%);
+	background-attachment:fixed;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	color:#022688;
+	position: relative;
+	 z-index: 999;
+	 display:block;
+	 text-decoration:none;}
+	a:hover {
+	color:#6B7DA2;}
+p {
+	margin:1em 0;
+	font-size:1.1em;
+	line-height:1.1em;
+	font-family: 'Slabo 27px', serif;
+	color: #0066cc;
+}
+
+q {
+	font-style:italic;
+	color:#333;
+}
+
+p.scrolldown {
+	font-size:1em;
+	margin:0;
+	font-family: 'Lobster', cursive;
+	color: #0099ff;
+	text-shadow: 2px 2px 1px #fff;
+}
+h1 {
+	font-size:3em;
+	margin:0;
+	font-family: 'Lobster', cursive;
+	color: #0099ff;
+	text-shadow: 2px 2px 1px #fff;
+}
+
+h1 > small {
+	text-align:right;
+	display:inline-block;
+	font-size:.71em;
+	text-indent:15em;
+	color:#444;
+}
+
+h2 {
+	color:inherit;
+	font-size:3em;
+	margin:0;
+	font-family: 'Lobster', cursive;
+	color: #0099ff;
+	text-shadow: 2px 2px 1px #fff;
+}
+
+h2:first-child {margin-top:0;}
+
+h3 {
+	color:#333;
+	font-size:1.41em;
+	margin:1em 0;
+}
+
+h4 {
+	color:#444;
+	font-size:1.11em;
+	margin:1em 0;
+}
+
+#scrollbar {
+	position:fixed;
+	right:2px;
+	height:50px;
+	width:6px;
+	background:#444;
+	background:rgba(0,0,0,0.6);
+	border:1px solid rgba(255,255,255,0.6);
+	z-index:300;
+	border-radius:3px;
+}
+
+.skrollr-desktop #scrollbar {display:none;}
+
+
+
+#bg1, #bg2 {
+z-index:49;
+top:0px;
+left:0;
+width:100%;
+height:100%;
+background:url(images/bkg1.png);
+	 background-repeat: no-repeat; 
+	  background-size:cover; 
+	
+}
+
+#bg2 {
+	z-index:50;
+	background-image:url(images/bkg_overlay.gif);
+	 background-repeat: no-repeat; 
+	  background-size:cover; 
+	
+	
+}
+
+#intro {
+	width:80%;
+	left:50%;
+	top:2em;
+	margin-left:-40%;
+	padding:2em;
+	text-align:center;
+	background:rgba(255,255,255,0.7);
+	text-align:center;
+	border: thin solid #ccc;
+	border-radius:1em;
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#snowtext  {
+width:60%;
+position: absolute;
+top: 2em;
+left: 1.5em;
+margin: 0 auto;
+padding:2em;
+text-align:center;
+background:rgba(255,255,255,0.7);
+text-align:center;
+border: thin solid #ccc;
+border-radius:1em;
+-webkit-transform-origin:0 0;
+-moz-transform-origin:0 0;
+-ms-transform-origin:0 0;
+-o-transform-origin:0 0;
+transform-origin:0 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+z-index: 200;
+pointer-events:all;
+}
+
+#snowtext p  {
+	text-align:left;}
+	
+#snowtext ul  {
+text-align:left;
+font-size:1.1em;
+line-height:1.1em;
+font-family: 'Slabo 27px', serif;
+color: #0066cc;
+margin: 0 auto;
+width: 80%;
+font-weight: 500;
+list-style: url(http://www.northeastern.edu/digital-news-files/tiny_snowflake.png);
+
+
+}
+
+#snowtext ul li {
+	margin: 5px 0px 5px 0px;}
+	
+#snowtextbkg {
+}
+
+
+#transform {
+	width:70%;
+	left:50%;
+	top:20%;
+	margin-left:-35%;
+	text-align:center;
+	font-size:150%;
+
+	.transform-origin(50%, 50%);
+}
+
+#properties {
+	width:100%;
+	height:100%;
+	padding-top:10%;
+	text-align:center;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#easing_wrapper {
+	width:100%;
+	height:100%;
+	z-index:50;
+	pointer-events: none;
+}
+
+#easing {
+	top:10%;
+	width:50%;
+	z-index:101;
+	pointer-events:all;
+}
+#easing2 {
+	top:30%;
+	width:80%;
+	z-index:102;
+	pointer-events:all;
+}
+#easing img {
+width:100%;
+height:auto;
+
+}
+
+
+.drop {
+	background:#09f;
+	font-weight:bold;
+	padding:1em;
+}
+
+#download {
+	width:80%;
+	left:10%;
+	height:80%;
+	padding:3em;
+	border:0 solid #222;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.twitter-share-button, .twitter-follow-button {
+	vertical-align:middle;
+}
+@media screen and (max-width: 360px) {
+	#easing.skrollable {
+		left:2%!important;}
+	
+}
