@@ -52,18 +52,18 @@
                     <div id="bg2" data-0="background-position:0px -58px;" data-end="background-position:0px -58px;"></div>
 
 
-                    <div id="intro" data-0="opacity:1;top:200px;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
+                    <div id="intro" data-0="opacity:1;top:20%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
                         <h1>Winter Fun In And Around Boston</h1>
 
                         <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                             voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
                             sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nost</p>
-                        <img src="/assets/images/scroll_down.png" width="536" height="42" alt="" />
+                        <img class="scroll-down-prompt" src="/assets/images/scroll_down.png" width="536" height="42" alt="" />
                         <p class="scrolldown"> Scroll Down</p>
                     </div>
                     <!--Ice Skating-->
                     <div class="easing_wrapper" data-0="display:none;" data-500="display:block;" data-2200="top:0%;" data-2400="top:-100%;display:none">
-                        <div class="easing" data-500="right:100%" data-1200="right:5%;">
+                        <div id="skating-text" class="easing" data-500="left:100%" data-1200="left:5%;">
                         <!-- <div class="easing" data-500="left:100%" data-1200="left:13%;"> -->
                             <div id="snowtextbkg"><img src="assets/images/snowflake_bkg2.png" alt="" /></div>
                             <div id="snowtext">
@@ -79,16 +79,16 @@
                         </div>
                     </div>
 
-                    <div class="easing_wrapper" data-0="display:none;" data-500="display:block;" data-2200="top:0%;" data-2400="top:-100%;display:none">
+                    <div id="skating-img" class="easing_wrapper" data-0="display:none;" data-500="display:block;" data-2200="top:0%;" data-2400="top:-100%;display:none">
                         <!--<div class="easing" data-500="right:100%" data-1200="right:8%;">-->
-                        <div class="easing" data-500="left:100%" data-1200="left:5%;">
+                        <div class="easing" data-500="right:100%" data-1200="right:5%;">
                             <img class="skater-img" src="assets/images/skater12.png" alt="" />
                         </div>
                     </div>
 
                     <!--Sledding-->
                     <div class="easing_wrapper" data-0="display:none;" data-2500="display:block;" data-4200="top:0%;" data-4400="top:-100%;display:none">
-                        <div class="easing" data-2500="left:100%" data-3200="left:7%;">
+                        <div id="sledding-text" class="easing" data-2500="left:100%" data-3200="left:7%;">
                             <div id="snowtextbkg"><img src="assets/images/snowflake_bkg2.png" alt="" /></div>
                             <div id="snowtext">
                                 <h2>Sledding</h2>
@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <div class="easing_wrapper" data-0="display:none;" data-2500="display:block;" data-4200="top:0%;" data-4400="top:-100%;display:none">
+                    <div id="sledding-img" class="easing_wrapper" data-0="display:none;" data-2500="display:block;" data-4200="top:0%;" data-4400="top:-100%;display:none">
                         <div class="easing" data-2500="right:100%" data-3200="right:7%;">
                             <img src="assets/images/sled2.png" alt="" />
                         </div>
@@ -112,7 +112,7 @@
                     <!--Skiing, Tubing, Snowboarding & Snowshoeing-->
                     <div class="easing_wrapper" data-0="display:none;" data-4500="display:block;" data-6200="top:0%;" data-6400="top:-100%;display:none">
                         <!--<div class="easing" data-4500="left:100%" data-5200="left:43%;">-->
-                        <div class="easing" data-4500="right:100%" data-5200="right:2%;">
+                        <div id="tubing-text" class="easing" data-4500="left:100%" data-5200="left:5%;">
                             <div id="snowtextbkg"><img src="assets/images/snowflake_bkg2.png" alt="" /></div>
                             <div id="snowtext">
                                 <h2>Skiing, Tubing and More!</h2>
@@ -128,16 +128,16 @@
                         </div>
                     </div>
 
-                    <div class="easing_wrapper" data-0="display:none;" data-4500="display:block;" data-6200="top:0%;" data-6400="top:-100%;">
+                    <div id="tubing-img" class="easing_wrapper" data-0="display:none;" data-4500="display:block;" data-6200="top:0%;" data-6400="top:-100%;">
                         <!--<div class="easing" data-4500="right:100%" data-5200="right:48%;">-->
-                        <div class="easing" data-4500="left:100%" data-5200="left:2%;">
+                        <div class="easing" data-4500="right:100%" data-5200="right:5%;">
                             <img src="assets/images/tuber2.png" alt="" />
                         </div>
                     </div>
 
                     <!--Winter Treats-->
                     <div class="easing_wrapper" data-0="display:none;" data-6500="display:block;" data-8200="top:0%;" data-8400="top:-100%;display:none">
-                        <div class="easing" data-6500="left:100%" data-7200="left:5%;">
+                        <div id="cocoa-text" class="easing" data-6500="left:100%" data-7200="left:5%;">
                             <div id="snowtextbkg"><img src="assets/images/snowflake_bkg2.png" alt="" /></div>
                             <div id="snowtext">
                                 <h2>Winter Treats</h2>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
 
-                    <div class="easing_wrapper" data-0="display:none;" data-6500="display:block;" data-8200="top:0%;" data-8400="top:-100%;display:none">
+                    <div id="cocoa-img" class="easing_wrapper" data-0="display:none;" data-6500="display:block;" data-8200="top:0%;" data-8400="top:-100%;display:none">
                         <div class="easing" data-6500="right:100%" data-7200="right:5%;">
                             <img class="cocoa-img" src="assets/images/cocoa2.png" alt="" />
                         </div>
@@ -166,8 +166,7 @@
 
                     <!--Winter Carnivals-->
                     <div class="easing_wrapper" data-0="display:none;" data-8500="display:block;" data-10200="top:0%;" data-10400="top:-100%;display:none">
-                        <!--<div class="easing" data-8500="left:100%" data-9200="left:13%;">-->
-                        <div class="easing" data-8500="right:100%" data-9200="right:5%;">
+                        <div id="winter-carnival-text" class="easing" data-8500="left:100%" data-9200="left:5%;">
                             <div id="snowtextbkg"><img src="assets/images/snowflake_bkg2.png" alt="" /></div>
                             <div id="snowtext">
                                 <h2>Winter Carnivals</h2>
@@ -187,10 +186,9 @@
                         </div>
                     </div>
 
-                    <div class="easing_wrapper" data-0="display:none;" data-8500="display:block;" data-10200="top:0%;" data-10400="top:-100%;display:none;">
+                    <div id="winter-carnival-img" class="easing_wrapper" data-0="display:none;" data-8500="display:block;" data-10200="top:0%;" data-10400="top:-100%;display:none;">
                         <!--<div class="easing" data-8500="right:100%" data-9200="right:5%;">-->
-                        <div class="easing" data-8500="left:100%" data-9200="left:5%;">
-
+                        <div class="easing" data-8500="right:100%" data-9200="right:5%;">
                             <img class="snowshoe-img" src="assets/images/snowshoe2.png" alt="" />
                         </div>
                     </div>

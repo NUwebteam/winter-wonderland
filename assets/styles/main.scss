@@ -269,7 +269,7 @@ list-style: url(http://www.northeastern.edu/digital-news-files/tiny_snowflake.pn
 }
 
 .easing {
-	top:10%;
+	top:20%;
 	width:50%;
 	z-index:101;
 	pointer-events:all;
@@ -286,8 +286,8 @@ height:auto;
 }
 .easing #intro {
   width: 60%;
+  top: 3em !important;
 }
-
 .easing2 #intro {
   width: 100%;
 }
