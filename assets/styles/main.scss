@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
 	margin: 0;
 	padding: 0;
@@ -16,6 +20,8 @@ html, body {
 	line-height: 1;
 	min-height:100%;
 	font-family:Artial, Verdana, sans-serif;
+	width: 100%;
+	background-color: #fff;
 }
 
 body {
@@ -113,27 +119,54 @@ h4 {
 
 .skrollr-desktop #scrollbar {display:none;}
 
-
-
-#bg1, #bg2 {
-z-index:49;
-top:0px;
-left:0;
-width:100%;
-height:100%;
-background:url(images/bkg1.png);
-	 background-repeat: no-repeat; 
-	  background-size:cover; 
-	
+.main-container {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
 }
+
+.main-bg, .second-bg {
+  width: 80%;
+  left: 10%;
+  height: 100vh;
+  position: fixed;
+}
+
+.main-bg {
+  background: url(../images/bkg1.png) no-repeat center center fixed;
+  z-index: 49;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.second-bg {
+  background: url(../images/bkg_overlay.gif) no-repeat center center fixed;
+  z-index: 50;
+}
+
+
+// #bg1, #bg2 {
+// z-index:49;
+// top:0px;
+// left:0;
+// width:100%;
+// height:100%;
+// background:url(../images/bkg1.png);
+// 	 background-repeat: no-repeat;
+// 	  background-size:cover;
+//
+// }
 
 #bg2 {
 	z-index:50;
-	background-image:url(images/bkg_overlay.gif);
-	 background-repeat: no-repeat; 
-	  background-size:cover; 
-	
-	
+	background-image:url(../images/bkg_overlay.gif);
+	 background-repeat: no-repeat;
+	  background-size:cover;
+
+
 }
 
 #intro {
@@ -183,7 +216,7 @@ pointer-events:all;
 
 #snowtext p  {
 	text-align:left;}
-	
+
 #snowtext ul  {
 text-align:left;
 font-size:1.1em;
@@ -200,7 +233,7 @@ list-style: url(http://www.northeastern.edu/digital-news-files/tiny_snowflake.pn
 
 #snowtext ul li {
 	margin: 5px 0px 5px 0px;}
-	
+
 #snowtextbkg {
 }
 
@@ -213,7 +246,7 @@ list-style: url(http://www.northeastern.edu/digital-news-files/tiny_snowflake.pn
 	text-align:center;
 	font-size:150%;
 
-	.transform-origin(50%, 50%);
+	/*.transform-origin(50%, 50%);*/
 }
 
 #properties {
@@ -277,5 +310,5 @@ height:auto;
 @media screen and (max-width: 360px) {
 	#easing.skrollable {
 		left:2%!important;}
-	
+
 }

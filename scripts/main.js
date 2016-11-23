@@ -1,19 +1,33 @@
-require.config({
-	baseUrl: "../dist",
-	paths: {
-		'skrollr' : "skrollr.min"
-	},
-	waitSeconds: 15
-});
+'use strict';
 
-require(['skrollr'], function(skrollr){
-	var s = skrollr.init({
-		edgeStrategy: 'set',
-		easing: {
-			WTF: Math.random,
-			inverted: function(p) {
-				return 1-p;
-			}
+let skrollr = require('../dist/skrollr.min.js');
+
+// require.config({
+// 	baseUrl: "dist/",
+// 	paths: {
+// 		'skrollr' : "skrollr.min"
+// 	},
+// 	waitSeconds: 15
+// });
+
+// require(['skrollr'], function(skrollr){
+// 	var s = skrollr.init({
+// 		edgeStrategy: 'set',
+// 		easing: {
+// 			WTF: Math.random,
+// 			inverted: function(p) {
+// 				return 1-p;
+// 			}
+// 		}
+// 	});
+// });
+
+skrollr.init({
+	edgeStrategy: 'set',
+	easing: {
+		WTF: Math.random,
+		inverted: function(p) {
+			return 1-p;
 		}
-	});
+	}
 });
