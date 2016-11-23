@@ -259,7 +259,7 @@ list-style: url(http://www.northeastern.edu/digital-news-files/tiny_snowflake.pn
 	box-sizing: border-box;
 }
 
-#easing_wrapper {
+.easing_wrapper {
 	width:80%;
 	height:100%;
   left: 10%;
@@ -268,39 +268,39 @@ list-style: url(http://www.northeastern.edu/digital-news-files/tiny_snowflake.pn
   text-align: center;
 }
 
-#easing {
+.easing {
 	top:10%;
 	width:50%;
 	z-index:101;
 	pointer-events:all;
 }
-#easing2 {
+.easing2 {
 	top:30%;
 	width:50%;
 	z-index:102;
 	pointer-events:all;
 }
-#easing img {
+.easing img {
 width:60%;
 height:auto;
 }
-#easing #intro {
+.easing #intro {
   width: 60%;
 }
 
-#easing2 #intro {
+.easing2 #intro {
   width: 100%;
 }
-#easing .skater-img {
+.easing .skater-img {
   width: 50%;
   margin: auto;
 }
-#easing .cocoa-img {
+.easing .cocoa-img {
   width: 50%;
   margin: auto;
 }
 
-#easing .snowshoe-img {
+.easing .snowshoe-img {
   width: 50%;
   margin: auto;
 }
@@ -327,7 +327,7 @@ height:auto;
 	vertical-align:middle;
 }
 @media screen and (max-width: 360px) {
-	#easing.skrollable {
+	.easing.skrollable {
 		left:2%!important;}
 
 }
